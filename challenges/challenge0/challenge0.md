@@ -100,7 +100,7 @@ In Retrieval-Augmented Generation (RAG), two key concepts play a crucial role in
 
 ### Chunking
 
-**Chunking** is the process of breaking down large documents or datasets into smaller, more manageable pieces, called "chunks." These chunks are typically short passages, sentences, or paragraphs, depending on the structure and nature of the data. The purpose of chunking is to make it easier for the retnreval system to search and identify the specific pieces of information that are most relevant to the input query. For example, instead of searching through an entire book or lengthy document, the retriever will search through these smaller chunks. This allows the system to locate and retrieve the most relevant parts of the data quickly and accurately.
+**Chunking** is the process of breaking down large documents or datasets into smaller, more manageable pieces, called "chunks." These chunks are typically short passages, sentences, or paragraphs, depending on the structure and nature of the data. The purpose of chunking is to make it easier for the retrieval system to search and identify the specific pieces of information that are most relevant to the input query. For example, instead of searching through an entire book or lengthy document, the retriever will search through these smaller chunks. This allows the system to locate and retrieve the most relevant parts of the data quickly and accurately.
 
 There are different strategies for chunking documents, such as breaking them down based on sentence boundaries, paragraph boundaries, or other logical divisions. The choice of chunking strategy depends on the nature of the data and the requirements of the retrieval system. In the below table you can learn about the most common:
 
