@@ -185,9 +185,9 @@ You can use the following command to deploy the resources:
 # Create the Azure AI Foundry Hub
 az deployment group create --resource-group Your_Resource_Group_Name --template-file main.bicep --parameters aiHubName=<unique_identifier>
 ```
-The `aiHubName` parameter **must be 5 or less characters**. It can't be entirely numeric or contain the following characters: ```~ ! @ # $ % ^ & * ( ) = + _ [ ] { } \ | ; : . ' " , < > / ?.```. Our seggestion is to use the first character of your name, followed by 3-4 characters of your surname.
+The `aiHubName` parameter **must be 5 or less characters**. It can't be entirely numeric or contain the following characters: ```~ ! @ # $ % ^ & * ( ) = + _ [ ] { } \ | ; : . ' " , < > / ?.```. Our suggestion is to use the first character of your name, followed by 3-4 characters of your surname.
 
-You will be also asked to provide the `administratorLoginPassword`. This is the password to access the SQL Server that will be created as part of the deployment. PLease be sure to use a complex password that meets these requirements:
+You will be also asked to provide the `administratorLoginPassword`. This is the password to access the SQL Server that will be created as part of the deployment. Please be sure to use a complex password that meets these requirements:
 - The password doesn't contain the account name of the user.
 - The password is at least eight characters long.
 - The password contains characters from three of the following four categories:
