@@ -138,7 +138,7 @@ param storageSkuName string = 'Standard_LRS'
 
 var storageNameCleaned = replace(storageName, '-', '')
 
-resource aiServices 'Microsoft.CognitiveServices/accounts@2023-05-01' = {
+resource aiServices 'Microsoft.CognitiveServices/accounts@2024-10-01' = {
   name: aiServicesName
   location: location
   sku: {
@@ -146,9 +146,10 @@ resource aiServices 'Microsoft.CognitiveServices/accounts@2023-05-01' = {
   }
   kind: 'AIServices' // or 'OpenAI'
   properties: {
-    apiProperties: {
-      statisticsEnabled: false
-    }
+  //  apiProperties: {
+  //   statisticsEnabled: false
+  //  }
+  // No apiProperties needed for AIServices kind
   }
 }
 
